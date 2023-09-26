@@ -1,0 +1,153 @@
+:root {
+    --f7-page-bg-color: #fff;
+    --f7-md-surface: #fff !important;
+    --f7-md-surface-3: #fff !important;
+    --f7-panel-width: 350px;
+    --f7-popup-tablet-border-radius: 18px;
+    --f7-popover-border-radius: 18px;
+    --f7-md-outline: #e4e4e7 !important;
+    --f7-menu-list-border-radius: 8px !important;
+    --f7-menu-list-item-min-height: 40px !important;
+    --f7-block-title-large-text-color: #0073cb !important;
+}
+
+::placeholder {
+    color: #71717a !important;
+}
+
+html.with-panel-left-push .framework7-root>.view {
+    width: calc(100% - var(--f7-panel-width));
+}
+
+.logo {
+    width: 210px;
+}
+
+.setup-card {
+    --setup-spacing: 32px;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.setup-card .setup-header h1 {
+    margin-top: 24px;
+}
+
+.setup-card .setup-header h1,
+.setup-card .setup-header p {
+    padding-left: var(--setup-spacing);
+    padding-right: var(--setup-spacing);
+    text-align: center;
+}
+
+.setup-card p {
+    color: #a1a1a1;
+}
+
+.setup-card .setup-content .list {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.setup-card .setup-content {
+    padding-left: calc(var(--setup-spacing) - 16px);
+    padding-right: calc(var(--setup-spacing) - 16px);
+    display: flex;
+    justify-content: center;
+}
+
+.setup-card .setup-content .button, 
+.setup-card .setup-content .list {
+    max-width: 300px;
+}
+
+.setup-card .setup-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - var(--setup-spacing) * 2);
+    padding-left: var(--setup-spacing);
+    padding-right: var(--setup-spacing);
+    padding-bottom: var(--setup-spacing);
+}
+
+.setup-card .setup-footer .button {
+    width: 100%;
+}
+
+.wrapper {
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 150px #7ac142
+    }
+}
+
+@media (min-width: 1028px) {
+    .logo.mobile {
+        display: none;
+    }
+
+    .tabbar-main {
+        display: none;
+    }
+}

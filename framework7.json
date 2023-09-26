@@ -1,0 +1,18 @@
+{
+  "cwd": "/Users/labs/dev/cto-larsson",
+  "type": [
+    "web"
+  ],
+  "name": "CTO Larsson",
+  "framework": "react",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#2772fa",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
