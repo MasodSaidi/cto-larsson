@@ -6,13 +6,9 @@ const SetupPasswordPage = () => (
     <Navbar transparent />
     <div className="setup-card">
       <div className="setup-header">
-        <div
-          style={{
-            background: 'url(https://cdn.framework7.io/placeholder/people-160x160-1.jpg) no-repeat center top',
-            backgroundSize: 'cover',
-            height: document.body.clientWidth < 1028 ? '280px' : '220px',
-          }}
-        ></div>
+        <div className="setup-image">
+          <img src="setup-image.svg" />
+        </div>
         <h1>Setup Password</h1>
         <p>Before we start, choose a password</p>
       </div>

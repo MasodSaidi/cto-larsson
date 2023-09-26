@@ -34,7 +34,7 @@ const MyApp = () => {
 
       <Panel left push backdrop={false} visibleBreakpoint={1028}>
         <Page>
-          <Navbar transparent>
+          <Navbar>
             <NavLeft>
               <img className="logo" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1131440/settings_images/q58TyONWSNae3OVlBAaN_CTO-LARSSON-Logo-2022-PB2-anim-10s-loop.gif" />
             </NavLeft>

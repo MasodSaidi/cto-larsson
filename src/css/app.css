@@ -2,13 +2,17 @@
     --f7-page-bg-color: #fff;
     --f7-md-surface: #fff !important;
     --f7-md-surface-3: #fff !important;
-    --f7-panel-width: 350px;
+    --f7-panel-width: 320px;
     --f7-popup-tablet-border-radius: 18px;
     --f7-popover-border-radius: 18px;
     --f7-md-outline: #e4e4e7 !important;
     --f7-menu-list-border-radius: 8px !important;
     --f7-menu-list-item-min-height: 40px !important;
-    --f7-block-title-large-text-color: #0073cb !important;
+    --f7-block-title-large-text-color: #000000 !important;
+    --f7-input-outline-border-color: #eaeaea !important;
+    --f7-button-raised-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    --f7-navbar-border-color: #eaeaea !important;
+    --f7-navbar-bg-color-rgb: rgb(234, 234, 234) !important;
 }
 
 ::placeholder {
@@ -19,8 +23,12 @@ html.with-panel-left-push .framework7-root>.view {
     width: calc(100% - var(--f7-panel-width));
 }
 
+.panel-left {
+    border-right: 1px solid #eeeeee;
+}
+
 .logo {
-    width: 210px;
+    width: 195px;
 }
 
 .setup-card {
@@ -32,8 +40,14 @@ html.with-panel-left-push .framework7-root>.view {
     height: 100%;
 }
 
+.setup-card .setup-header .setup-image {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--setup-spacing);
+}
+
 .setup-card .setup-header h1 {
-    margin-top: 24px;
+    margin-top: 0;
 }
 
 .setup-card .setup-header h1,
@@ -99,8 +113,8 @@ html.with-panel-left-push .framework7-root>.view {
 }
 
 .checkmark {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     display: block;
     stroke-width: 2;
@@ -138,7 +152,7 @@ html.with-panel-left-push .framework7-root>.view {
 
 @keyframes fill {
     100% {
-        box-shadow: inset 0px 0px 0px 150px #7ac142
+        box-shadow: inset 0px 0px 0px 170px #7ac142
     }
 }
 

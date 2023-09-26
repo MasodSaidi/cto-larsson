@@ -41,7 +41,7 @@ const HomePage = () => {
 
   return (
     <Page name="home" pageContent={false}>
-      <Navbar transparent>
+      <Navbar>
         <NavLeft>
           <img className="logo mobile" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1131440/settings_images/q58TyONWSNae3OVlBAaN_CTO-LARSSON-Logo-2022-PB2-anim-10s-loop.gif" />
         </NavLeft>

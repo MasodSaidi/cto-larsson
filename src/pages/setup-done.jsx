@@ -7,7 +7,7 @@ const SetupDonePage = () => (
     <div className="setup-card">
       <div className="setup-header" style={{ marginTop: "72px" }}>
         <h1>Success!</h1>
-        <p>You have successfully finished the setup process. Get started with your first course.</p>
+        <p>You've successfully finished the setup process. Get started with your first course.</p>
       </div>
       <div className="setup-content">
         <div className="wrapper"> 

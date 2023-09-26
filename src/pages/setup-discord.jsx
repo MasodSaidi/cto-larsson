@@ -6,19 +6,15 @@ const SetupDiscordPage = () => (
     <Navbar backLink="Back" transparent />
     <div className="setup-card">
       <div className="setup-header">
-        <div
-          style={{
-            background: 'url(https://cdn.framework7.io/placeholder/people-160x160-1.jpg) no-repeat center top',
-            backgroundSize: 'cover',
-            height: document.body.clientWidth < 1028 ? '280px' : '220px',
-          }}
-        ></div>
+        <div className="setup-image">
+          <img src="setup-image.svg" />
+        </div>
         <h1>Setup Discord</h1>
         <p>In order to join our Discord channel, you need to first have Discord account</p>
       </div>
       <div className="setup-content">
         <Block>
-          <Button large raised>JOIN DISCORD CHANNEL</Button>
+          <Button large raised round>JOIN DISCORD CHANNEL</Button>
         </Block>
       </div>
       <div className="setup-footer">
